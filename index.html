@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <title>FoursquareInsta - Convert foursquare places into instagram locations</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Fonts from Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><b>FoursquareInsta</b></a>
+        </div>
+        <div class="navbar-collapse collapse">
+         	<ul class="nav navbar-nav navbar-right">
+            <li><a href="#">About</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+	<div id="headerwrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<h1>Enter Foursquare venue ID<br/>
+					<span>We will convert it to instagram</span></h1>
+					<form class="form-inline" role="form">
+					  <div class="form-group">
+					    <input type="text" class="form-control" id="foursquareID" placeholder="Enter foursquare id">
+					  </div>
+					  <button type="submit" class="btn btn-warning btn-lg">Convert!</button>
+					</form>			
+					<div class="how" data-toggle="modal" data-target="#myModal">How to find out foursquare ID
+						
+					</div>		
+				</div><!-- /col-lg-6 -->
+				<div class="col-lg-6">
+					<img class="img-responsive" src="assets/img/ipad-hand.png" alt="">
+				</div><!-- /col-lg-6 -->
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+	<div class="container">
+		<div class="row mt centered">
+			<div id="instagram_info">
+				<div class="alert alert-success">Call successfull<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button></div>
+				<h1>Instagram location info</h1>
+				<div id="instagram_id">Instagram ID: <span> </span> </div>
+				<div id="instagram_name">Location name: <span> </span> </div>
+				<div id="instagram_photos"> </div>
+			</div>
+		</div><!-- /row -->
+	
+		<div class="row mt">
+			<div class="col-lg-6 col-lg-offset-3">
+				<h1>About FoursquareInsta<br/></h1>
+				<p> You can look for photos of actual location on Instagram by using Foursquare venue ID </p>
+				<p> If you want to extend your applications with deeper social integration and to gather data from both Foursquare and Instagram at the same time, you can look up for Instagram ID's for your foursquare venues<br />
+				If you are interested in source code and want to use it on your own website, feel free to grab it from GitHub
+
+				</p>
+
+			</div>
+		</div><!-- /row -->
+		<p class="centered">Template by BlackTie.co | Service by <a href="http://kasperiunas.com">Eimantas Kasperiūnas </a></p>
+	</div><!-- /container -->
+
+	<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+      	<h3>To get Foursquare venue ID just visit venue page on Foursquare.com and copy the last part of URL as shown in image</h3>
+			<img src="./assets/img/how.png" alt="how to get foursquare id" class="how_img" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
