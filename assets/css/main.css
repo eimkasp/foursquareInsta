@@ -177,3 +177,21 @@ margin-right: auto;
 .how_img {
     max-width: 100%;
 }
+
+#instagram_photos {
+    margin-top: 20px;
+}
+#instagram_photos .photo {
+    width: 20%;
+    float: left;
+    border-right: 5px white solid;
+    border-bottom: 5px white solid;
+}
+
+#instagram_photos .photo img {
+    max-width: 100%;
+}
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: 60px;
+}
